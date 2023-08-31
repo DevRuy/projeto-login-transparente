@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: url(../imagens/background-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORM*/
+.form{
+    display: relative;
+    
+    
+}
+
+main{
+    width: 420px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 50px;
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2)
+}
+
+.form h1{
+    text-align: center;
+    font-size: 2.2em;
+}
+
+
+/*LOGIN*/
+.form .login{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: block;
+    
+    margin: 30px 0px;
+}
+
+.login input{
+    width: 100%;
+    height:100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    border-radius: 40px;
+    font-size: 1em;
+    padding: 20px 45px 20px 20px;
+}
+
+.login input::placeholder{
+    color: white;
+}
+
+.login span{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    
+}
+
+/*REMEMBER-FORGOT*/
+.form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -10px 0px 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+
+}
+
+/*SUBMIT*/
+.form .submit input{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    color: #333;
+    font-weight: 600px;
+}
+
+.form .register{
+    text-align: center;
+    margin: 25px 0px -15px;
+    font-size: 15px;
+
+}
+
+.form .register a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.form .register a:hover{
+    text-decoration: underline;
+}
